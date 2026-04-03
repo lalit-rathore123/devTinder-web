@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const { data: res } = await axios.post(
-        "http://13.61.189.101:5000/login",
+        "/api/login",
         {
           email,
           password,
